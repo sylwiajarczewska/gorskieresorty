@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" id="gorskie-resorty-pl">
+<head>
+	<meta charset="UTF-8">
+    <title>Górskie Resorty | Osada-Śnieżka | Blue Mountain Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="górskie resorty, szklarska poręba, łomnica, karpacz, jelenia góra, wypoczynek w górach, karkonosze, osada śnieżka, blue mountain resort" />
+  	<meta name="description" content="Górskie resorty oferują wypoczynek w górach. Karkonosze, Łomnica, Szklarska Poręba. Malowniczy widok na Śnieżkę. Blisko do Karpacza. Idealnie na wyprawę rodzinną. Trasy rowerowe i narciarskie." />
+  	<link rel="stylesheet" href="owl-carousel/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css" type="text/css">
+</head>
+<body>
+	<section class="main-logo main-logo-gr ">
+		<img src="media/GR_logo.png" alt="Górskie Resorty"/>
+	</section>
+	<section class="choose-lang">
+		<a class="button menu-lang" href="#" id="menu-lang"><span id="menu-lang-txt">PL</span><span class="lightarrow-down"></span></a>
+		<div id="lang-buttons-wrap">
+			<a class="button button-selected lang-button" href="#">PL</a>
+			<a class="button lang-button" href="#">EN</a>
+			<a class="button lang-button" href="#">DE</a>
+		</div>
+	</section>
+
+	<section class="resorts">
+		<div class="resorty hotele-apartamenty">
+			<div class="link-descript-mountains">
+				<h1><a class="goto-five" href="#">HOTELE I APARTAMENTY W GÓRACH</a></h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="resorts example-carousel-residences">
+		<div class="resort osada-sniezka">
+			<div class="frame-box">
+			<div class="logo-holder"><a class="logo goto-os" alt="Osada Śnieżka, Łomnica k. Karpacza" target="_blank"  href="http://osada-sniezka.pl"></a></div>
+                <div class="link-descript"><a href="http://osada-sniezka.pl" target="_blank">
+		 		<h2>ŁOMNICA</h2>
+		 		<p class="box"><a class="goto-three" href="http://osada-sniezka.pl" target="_blank">Rodzinny resort</a></p>
+				<h3><a class="goto-one size-letter" href="http://osada-sniezka.pl" target="_blank">od</a> 2013</h3>
+			</div>
+			</div>
+				<a class="button goto goto-os size-letter" target="_blank" href="http://osada-sniezka.pl">wejdź</a>
+			
+		</div>
+
+		<div class="resort blue-mountain">
+			<div class="frame-box">
+			<div class="logo-holder"><a class="logo goto-bm" alt="Blue Mountain Resort, Szklarska Poręba" target="_blank" href="http://blue-mountain-resort.pl"></a></div>
+			<div class="link-descript"><a href="http://blue-mountain-resort.pl" target="_blank">
+				<h2>SZKLARSKA PORĘBA</h2>
+				<p class="box"><a class="goto-three" href="http://blue-mountain-resort.pl" target="_blank">Rodzinny resort</a></p>
+				<h3><a class="goto-one size-letter" href="http://blue-mountain-resort.pl" target="_blank">od</a> 2017</h3>
+			</a></div>
+		</div>
+			<a class="button goto goto-bm size-letter" target="_blank" href="http://blue-mountain-resort.pl">wejdź</a>
+		</div>
+
+		<div class="resort green-mountain">
+			<div class="frame-box">
+			<div class="logo-holder"><a class="logo goto-gm" alt="Green Mountain Resort, Karpacz" target="_blank" href="http://green-mountain.pl"></a></div>
+
+			<div class="link-descript" style="position:relative;"><a href="http://green-mountain.pl" target="_blank">
+				<h2>KARPACZ</h2>
+				<p class="box"><a class="goto-four" href="http://green-mountain.pl" target="_blank">Hotel 5* i Apartamenty</a></p>
+				<img src="media/drEris.png" class="logo-eris">
+				<h3><a class="goto-two size-letter" href="http://green-mountain.pl" target="_blank">otwarcie</a> 21.12.2018</h3>
+</a>
+			</div>
+		</div>
+			<a class="button goto goto-gm size-letter" target="_blank" href="http://green-mountain.pl">wejdź</a>
+		</div>
+
+		<div class="resort platinium-mountain">
+			<div class="frame-box">
+			<div class="logo-holder"><a class="logo goto-pm" alt="Platinium Mountain Resort, Szklarska Poręba" target="_blank" href="http://platinum-mountain-resort.pl"></a></div>
+			<div class="link-descript"><a href="http://platinum-mountain-resort.pl" target="_blank">
+				<h2>SZKLARSKA PORĘBA</h2>
+				<p class="box"><a class="goto-four" href="http://platinum-mountain-resort.pl" target="_blank">Hotel 5* i Apartamenty</a></p>
+				<h3><a class="goto-two size-letter" href="http://platinum-mountain-resort.pl" target="_blank">otwarcie</a> 01.07.2019</h3>
+			</a></div>
+		</div>
+			<a class="button goto goto-pm size-letter" target="_blank" href="http://platinum-mountain-resort.pl">wejdź</a>
+		</div>
+	</section>
+
+	<div id="bgvidcont">
+    	<div id="bgvid"></div>
+    </div>
+
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById("bgvid").classList.remove('anim');
+    setTimeout(function() {
+	    document.getElementById("bgvid").classList.add('anim');
+    }, 200);
+
+    var is_mobile = window.matchMedia( "(orientation: portrait)" );
+    var anchors = document.getElementsByTagName('a');
+
+	
+    var checkMobile = function() {
+    	if (is_mobile.matches) {
+    		//document.getElementById('lang-buttons-wrap').style.display = 'none';	
+    	} else {
+    		//document.getElementById('lang-buttons-wrap').style.display = 'block';
+    	}
+
+        setTimeout(function() {
+            $(".owl-carousel").each(function(){
+                $(this).data('owlCarousel').updateVars();
+            });
+        }, 200);
+    }
+	
+
+    var replaceLang = function() {
+    	var lang = this.innerText;
+    	var url_os = 'http://osada-sniezka.pl/';
+    	var url_bm = 'http://blue-mountain-resort.pl/';
+    	var url_gm = 'http://green-mountain-resort.pl/';
+    	var url_pm = '#';
+    	var txt    = 'wejdź';
+    	var txt_one   = 'od';
+    	var txt_two = "otwarcie";
+    	var txt_three = "Rodzinny resort";
+    	var txt_four = "Hotele 5* i Apartamenty";
+    	var txt_five = "HOTELE I APARTAMENTY W GÓRACH";
+    	switch (lang) {
+    		case 'EN': 
+    				   txt    = 'discover';
+    				   txt_one    = 'since'; 
+    				   txt_two = "opening";
+    				   txt_three = "Family resort";
+    				   txt_four = "5* Hotel and Apartments"; 
+    				   txt_five = "HOTELS AND APARTMENTS IN THE MOUNTAINS"; break;
+    		case 'DE': 
+    		    	   txt    = 'entdecken'; 
+    		    	   txt_one = "seit";
+    		    	   txt_two = "Eröffnung"; 
+    		    	   txt_three = "Familienresort";
+    		    	   txt_four = "Hotel 5* und Appartments";
+    		    	   txt_five = "HOTELS UND APPARTEMENTS IN DEN BERGEN"; break;
+    	}
+    	for (var i = 0; i < anchors.length; i++) {
+    		var anchor = anchors[i];
+    		if( anchor.classList.contains('goto-os') ) {
+            	anchor.href = url_os;
+        	}
+        	if( anchor.classList.contains('goto-bm') ) {
+            	anchor.href = url_bm;
+        	}
+        	if( anchor.classList.contains('goto') ) {
+            	anchor.innerText = txt;
+        	}
+        	if( anchor.classList.contains('goto-one') ) {
+            	anchor.innerText = txt_one;
+        	}
+        	if( anchor.classList.contains('goto-two') ) {
+            	anchor.innerText = txt_two;
+        	}
+        	if( anchor.classList.contains('goto-three') ) {
+            	anchor.innerText = txt_three;
+        	}
+        	if( anchor.classList.contains('goto-four') ) {
+            	anchor.innerText = txt_four;
+        	}
+        	if( anchor.classList.contains('goto-five') ) {
+            	anchor.innerText = txt_five;
+        	}
+        	if( anchor.classList.contains('lang-button') ) {
+            	anchor.classList.remove('button-selected');
+        	}
+    	}
+    	document.getElementById('menu-lang-txt').innerText = lang;
+    	this.classList.add('button-selected');
+
+    	checkMobile();
+
+    	return false;
+    }
+
+    var toggleDisplayBlockCSS = function(elem) {
+    	elem.style.display = (elem.style.display == 'block') ? 'none' : 'block';
+    }
+    var downUpLang = function(e) {
+    	e.preventDefault();
+    	toggleDisplayBlockCSS( document.getElementById('lang-buttons-wrap') );
+    	return false;
+    }
+    var hideLang = function(e) {
+    	if (e.srcElement.nodeName == "BODY" && is_mobile.matches) {
+    		document.getElementById('lang-buttons-wrap').style.display = 'none';
+    	}
+    }
+
+    var doOnOrientationChange = function(e) {
+        location.reload();
+    }
+
+    document.getElementById('menu-lang').addEventListener("click", downUpLang);
+    for(var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        if( anchor.className.match(/\blang-button\b/) ) {
+            anchor.onclick = replaceLang;
+        }
+    }
+
+    window.addEventListener("click", hideLang);
+	
+	/*
+    window.addEventListener("resize", function() {
+    	checkMobile();
+    });
+    //window.addEventListener('orientationchange', doOnOrientationChange);
+    checkMobile();
+	*/
+
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126025282-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-126025282-1');
+</script>
+
+<!-- Carousel -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+   //var pxratio = window.devicePixelRatio;
+   //if (pxratio < 1) pxratio = 1;
+    $('.example-carousel-residences').owlCarousel({
+      autoPlay: false,
+      items: 4,
+      itemsDesktop: [1199, 4],
+      itemsDesktopSmall: [900, 3],
+      itemsTablet: [768, 1],
+      itemsMobile: [560, 1],
+    });
+
+    var owl = $(".example-carousel-residences").data('owlCarousel');
+	
+	/*
+    var currentY = 0;
+    var lastY = 0;
+    var lastMove;
+    $('.owl-item').on('touchdown', function(e) {
+        currentY = e.originalEvent.touches[0].clientY;
+        console.log("XXX1", e);
+    });
+    $('.owl-item').on('touchmove', function(e) {
+        lastY = e.originalEvent.touches[0].clientY;
+    });
+    $('.owl-item').on('touchend', function(e) {
+        var d = Math.abs(currentY - lastY);
+        if (currentY < lastY) {
+            if (d > 20) owl.next();
+        } else if(currentY > lastY) {
+            if (d > 20) owl.prev() 
+        }
+        lastY = currentY;
+    });
+
+    function callbackBefore(e) {
+        console.log("before", this, e);
+    }
+    function callbackAfter(e) {
+        console.log("after", this, e);
+    }
+	*/
+  });
+</script>
+
+<style>
+
+
+
+#bgvid { 
+    background: #525d64 url(media/tlo_gradient_2.jpg) no-repeat;
+    width: auto;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -10;
+    height: 100%;
+}
+
+@font-face {
+    font-family: resortyFonts;
+    src: url(fonts/acherus_grotesque_-_regular.otf);
+ 	src: url(fonts/acherus_grotesque_-_regular.eot?#iefix) format('embedded-opentype'),
+    	 url(fonts/acherus_grotesque_-_regular.woff2) format('woff2'),
+    	 url(fonts/acherus_grotesque_-_regular.woff) format('woff'),
+    	 url(fonts/acherus_grotesque_-_regular.ttf) format('truetype'),
+}
+
+body, section, div {
+	color: #fff;
+	text-decoration: none;
+    font-family: resortyFonts, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+body, section, div {
+	display: block;
+}
+
+body {
+	color: #fff;
+	width: 100%;
+	min-height: 100vh;
+}
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+	margin: 0.5em 1em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: resortyFonts;
+    height: 12vh;
+
+    line-height: 10vh;
+    opacity: 0;
+}
+
+.size-letter {
+	text-transform: uppercase;
+}
+
+.box {
+	height: 6vh;
+}
+
+
+.resort h3 {
+	margin: 0;
+	margin-top: 1vh;
+	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: resortyFonts;
+    height: 8vh;
+    opacity: 0;
+    text-transform: lowercase;
+}
+
+section.main-logo {
+	margin: 0 auto;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+	border: 0;
+	margin-top: 12vh;
+}
+
+section.main-logo-gr {
+	margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 1%;
+	border: 0;
+	padding-top: 2vh;
+	text-align: center;
+}
+
+section.main-logo img {
+	max-height: 80px;
+	padding-top: 1vh;
+}
+
+
+.resorts.owl-carousel {
+	padding: 0 2.5%;
+	box-sizing: border-box;
+}
+
+
+
+section.resorts {
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+.frame-box {
+	width: 100%;
+	border: 1px solid #fff;
+	margin-bottom: 18px;
+}
+
+div.resort {
+	text-align: center;
+	display: inline-block;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.owl-carousel .owl-wrapper-outer {
+	overflow: visible;
+}
+
+div.resorty {
+	display: inline-block;
+}
+
+.logo-eris {
+	height: 3vw;
+	display: block;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: 7%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    opacity: 1;
+}
+
+.resort .logo {
+	/*width: 11vw;*/
+	height: 11vw;
+	max-width: 75%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 4vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.resorty.hotele-apartamenty {
+	border: 1px solid #fff;
+    width: 95%;
+    margin-bottom: 1.5em;
+}
+
+.resort.blue-mountain .logo {
+	background-image: url(media/BM_logo.png);
+}
+
+.resort.osada-sniezka .logo {
+	background-image: url(media/OS_logo.png);
+}
+
+.resort.green-mountain .logo {
+	background-image: url(media/GM_logo.png?v=2);
+}
+
+.resort.platinium-mountain .logo {
+	background-image: url(media/platinumwhite.png);
+}
+
+section.choose-lang {
+	position: fixed;
+	right: 2.5%;
+	top: 0;
+	margin-top: 5vh;
+	height: 20vh;
+}
+
+a.button {
+	display: block;
+	border: 1px solid #fff;
+	text-align: center;
+}
+section.choose-lang a {
+    font-size: 0.5em;
+    margin-bottom: 2vh;
+    display: inline-block;
+	min-width: 30px;
+	min-height: 30px;
+	line-height: 30px;
+	
+}
+/*section.choose-lang a.menu-lang {
+	display: none;
+}*/
+a.button.goto {
+	//width: 20vw;
+	padding: 8px 0;
+	margin: 10px auto;
+}
+
+section.choose-lang a:hover, a.button-selected {
+	color: rgb(218,186,128);
+	background-color: #fff;	
+}
+a.button.goto:hover {
+	color: #fff;
+	background-color: rgb(218,186,128);	
+}
+
+#bgvidcont {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -2;
+}
+
+#bgvid.anim{
+   	transition-duration: 10s;
+	transform: scale(1) ;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+}
+#bgvid {
+
+	margin: 0 auto;
+	display: inline-block;
+    transform: scale(1.2) ;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+	.resort .frame-box:hover h2, .resort:hover:active h2 {
+		transition: all ease 0.8s;
+		line-height: 10vh;
+		opacity: 1;
+	}
+	.resort .frame-box:hover h3, .resort:hover:active h3 {
+		transition: all ease 0.8s;
+		line-height: 1vh;
+		opacity: 1;
+	}
+	.resort .frame-box:hover p, .resort:hover:active p {
+		/*transition: all ease 0.8s;*/
+		opacity: 0;
+	}
+	.resort .frame-box:hover .logo-eris, .resort:hover:active .logo-eris {
+		opacity: 0;
+	}
+
+@media all and (max-width: 630px) {
+	/*
+	section.choose-lang {
+		position: relative;
+		width: 100%;
+		margin: 34px auto;
+		text-align: center;
+		height: auto;
+		right: auto;
+	}*/
+	h1 {
+		font-size: 1em;
+	    font-weight: normal;
+	    margin: 0.5em 0.7em;
+	}
+	section.main-logo img {
+        height: 6vh;
+	    padding-top: 2vh;
+	    padding-bottom: 3vh;
+    }
+	section.choose-lang a.menu-lang {
+        display: block;
+        font-size: 3vw;
+        line-height: 3vw;
+        padding-top: 2vw;
+    }
+    #lang-buttons-wrap {
+        display: none;
+        background-color: rgb(218,186,128);
+    }
+    section.choose-lang a.menu-lang:hover {
+    	background: none;
+	}
+	a.button {
+    	border: 0px solid #fff;
+	}
+	a.button.goto {
+    	color: #fff;
+    	background-color: rgb(218,186,128);
+    	margin-bottom: 2vh;
+	}
+	section.choose-lang a {
+    	font-size: 0.5em;
+    	margin-bottom: 0;
+    	display: block;
+    	width: 15vh;
+    	height: 3vh;
+    	line-height: 30px;
+    	z-index: 999;
+	}
+	div.resorty.hotele-apartamenty {
+    	border: 2px solid #fff;
+    	width: 80%;
+	}
+	section.choose-lang {
+    	position: fixed;
+    	right: 2.5%;
+    	top: 0;
+    	margin-top: 2vh;
+    	height: 20vh;
+    	z-index: 999;
+	}
+	div.resort {
+    	display: block;
+    	margin-bottom: 2vh;
+    	/* border-top: 2px solid white; */
+    	min-height: 20vh;
+    	border: 2px solid #fff;
+    	margin-left: 7vw;
+    	margin-right: 7vw;
+	}
+	.frame-box {
+    	width: 100%;
+    	border: 0px solid #fff;
+    	margin-bottom: 18px;
+	}
+	.frame-box:hover {
+    	background-color: rgba(218,186,128, 0.0);
+    	border: 0 solid rgb(218,186,128);
+	}
+	div.resorty.hotele-apartamenty {
+    	margin-bottom: 0.5em;
+	}
+	div.resort .logo {
+    	max-width: 26vh;
+    	height: 15vh;
+	}
+	.resort h3 {
+    	display: block;
+    	width: 100%;
+    	height: 30%;
+    	opacity: 1;
+    	margin: auto;
+    	font-size: 4vw;
+    	text-transform: uppercase;
+	}
+	h2 {
+    	display: block;
+    	width: 100%;
+    	height: 20%;
+    	margin: auto;
+    	opacity: 1;
+    	font-size: 4vw;
+	}
+	div.resort .link-descript {
+    	height: 25vh;
+	}
+	.box {
+    	font-size: 4vw;
+    	height: 3vh;
+	}
+	.logo-eris {
+    	width: 26vw;
+    	height: 8vw;
+    	bottom: 2%;
+	}
+	div.resort .logo {
+    	margin: 5vh auto;
+    	width: 100%;
+	}
+    .lightarrow-down {
+        display: inline-block;
+        border: 2px solid rgb(250,250,250);
+        border-top: 0;
+        border-left: 0;
+        width: 1.7vw;
+        height: 1.7vw;
+        margin: 5px;
+
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+
+@media all and (min-width: 900px) {
+	section.choose-lang a.menu-lang {
+		display: none;
+	}
+	.resort {
+	width: 100%;
+	}
+	.frame-box:hover {
+		background-color: rgba(218,186,128, 0.8);
+		border: 1px solid rgb(218,186,128);
+	}
+    .lightarrow-down {
+        display: inline-block;
+        border: 2px solid rgb(250,250,250);
+        border-top: 0;
+        border-left: 0;
+        width: 1.7vw;
+        height: 1.7vw;
+        margin: 5px;
+
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+}
+@media all and (min-width: 631px) and (max-width: 768px) {
+    /*
+    section.choose-lang {
+        position: relative;
+        width: 100%;
+        margin: 34px auto;
+        text-align: center;
+        height: auto;
+        right: auto;
+    }*/
+    h1 {
+        font-size: 1em;
+        font-weight: normal;
+        margin: 0.5em 0.7em;
+    }
+    section.main-logo img {
+        height: 6vh;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+    section.choose-lang a.menu-lang {
+        display: block;
+        font-size: 2vw;
+        line-height: 3vw;
+        padding-top: 2vw;
+    }
+    #lang-buttons-wrap {
+        display: none;
+        background-color: rgb(218,186,128);
+    }
+    section.choose-lang a.menu-lang:hover {
+        background: none;
+    }
+    a.button {
+        border: 0px solid #fff;
+    }
+    a.button.goto {
+        color: #fff;
+        background-color: rgb(218,186,128);
+        margin-bottom: 2vh;
+        padding: 7px 0;
+        margin: 10px 160px;
+    }
+    section.choose-lang a {
+        font-size: 0.5em;
+        margin-bottom: 0;
+        display: block;
+        width: 15vh;
+        height: 3vh;
+        line-height: 30px;
+        z-index: 999;
+    }
+    div.resorty.hotele-apartamenty {
+        border: 1px solid #fff;
+        width: 80%;
+    }
+    section.choose-lang {
+        position: fixed;
+        right: 7.5%;
+        top: 0;
+        margin-top: 2vh;
+        height: 20vh;
+        z-index: 999;
+    }
+    div.resort {
+        display: block;
+        margin-bottom: 0vh;
+        /* border-top: 2px solid white; */
+        min-height: 20vh;
+        border: 1px solid #fff;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+    .frame-box {
+        width: 100%;
+        border: 0px solid #fff;
+        margin-bottom: 9px;
+    }
+    .frame-box:hover {
+        background-color: rgba(218,186,128, 0.0);
+        border: 0 solid rgb(218,186,128);
+    }
+    div.resorty.hotele-apartamenty {
+        margin-bottom: 0.5em;
+    }
+    div.resort .logo {
+        /*max-width: 26vh;
+        height: 15vh;*/
+        width: 270px;
+        height: 110px;
+    }
+    .resort h3 {
+        display: block;
+        width: 100%;
+        height: 30%;
+        opacity: 1;
+        margin: auto;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+    }
+    h2 {
+        display: block;
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        opacity: 1;
+        font-size: 2.5vw;
+    }
+    div.resort .link-descript {
+        height: 25vh;
+        padding: 27px;
+    }
+    .box {
+        font-size: 2.5vw;
+        height: 9vh;
+    }
+    .logo-eris {
+        display: none;
+        width: 26vw;
+        height: 8vw;
+        bottom: 2%;
+    }
+    div.resort .logo {
+        margin: 5vh auto;
+        /*width: 100%;*/
+    }
+    .frame-box {
+        display: flex;
+        flex-direction: row;
+    }
+    .lightarrow-down {
+        display: inline-block;
+        border: 2px solid rgb(250,250,250);
+        border-top: 0;
+        border-left: 0;
+        width: 0.7vw;
+        height: 0.7vw;
+        margin: 5px;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+@media all and (min-width: 420px) and (max-width: 600px) {
+	h2 {
+    	font-size: 2.7vw;
+	}
+	.box {
+    	font-size: 2.7vw;
+	}
+	.resort h3 {
+    	font-size: 2.7vw;
+	}
+	.logo-eris {
+    	width: 23vw;
+    	height: 7vw;
+    	bottom: -28%;
+	}
+
+}
+
+
+
+section.example-carousel-residences.resorts {
+	overflow: hidden;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    margin: 1px 5px;
+}
+
+</style>
+
+</body>
+</html>
